@@ -3,7 +3,12 @@ dist: trusty
 compiler: g++
 os: linux
 sudo: required
-before_install:
-  - sudo apt-get install g++-5
+addons: &gcc5
+  apt:
+    packages:
+      - g++-5
+      - gcc-5
+    sources:
+      - ubuntu-toolchain-r-test
 before_script:
 script: make
