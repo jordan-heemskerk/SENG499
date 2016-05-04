@@ -4,6 +4,6 @@ compiler: g++
 os: linux
 sudo: required
 before_install:
-  - apt-get install gcc5
+  - sudo apt-get install gcc5
 before_script:
 script: make
