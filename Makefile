@@ -82,10 +82,12 @@ obj/%.o:
 	$(GPP) -c -o $@ $(patsubst obj/%.o,src/%.cpp,$@)
 
 	
-OBJS:=
+OBJS:=\
+obj/hello_world.o
 
 
-TEST_OBJS:=
+TEST_OBJS:=\
+obj/test/hello_world.o
 
 
 all: bin/$(MODULE_NAME)$(MODULE_EXT)
