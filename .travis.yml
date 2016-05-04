@@ -11,5 +11,6 @@ addons: &gcc5
     sources:
       - ubuntu-toolchain-r-test
 before_install:
+  - mkdir -p include
   - curl -o include/catch.hpp https://raw.githubusercontent.com/philsquared/Catch/master/single_include/catch.hpp
 script: make
